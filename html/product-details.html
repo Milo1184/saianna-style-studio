@@ -6,6 +6,9 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
     <link href="css/saianna-style-studio.css" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
 </head>
 <body>
 	<header>
@@ -14,7 +17,7 @@
 
             <nav>
                 <ul id="main-menu">
-                    <li><a href="products.html">New Arrivals</a></li>
+                    <li><a href="#">New Arrivals</a></li>
                     <li><a href="#">Designers</a></li>
                     <li><a href="#">The Collection</a></li>
                     <li><a href="#">The Luxe Couture</a></li>
@@ -25,37 +28,57 @@
         <!-- div.wrap ENDS -->
 		</div>
     </header>
-    <main id="home" class="content">
-        <div id="slider">
+
+    <main id="product-details" class="content">
+    	<div class="slider">
             <img src="images/filler/banner.jpg" alt="Banner" title="Banner">
-        <!-- div#slider ENDS -->
+        <!-- div.slider ENDS -->
         </div>
+        
+        <div class="wrap">
+        	<div class="product-image">
+            	<img src="images/filler/products.JPG" alt="" title="">
+                
+                <ul class="thumbnails">
+                	<li><a href="#"><img src="images/filler/products.JPG" alt="" title=""></a></li>
+                	<li><a href="#"><img src="images/filler/products.JPG" alt="" title=""></a></li>
+                	<li><a href="#"><img src="images/filler/products.JPG" alt="" title=""></a></li>
+                	<li><a href="#"><img src="images/filler/products.JPG" alt="" title=""></a></li>
+                </ul>
+            </div>
             
-        <section class="home-collections two-columns">
-        	<div class="wrap">
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
-    
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
-    
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
-    
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
-            <!-- div.wrap ENDS -->
-			</div>
-        <!-- section.home-collections ENDS -->
-        </section>
+            <div class="details">
+            	<h1>Product 1</h1>
+                
+                <p><strong>Designer:</strong> Designer Name</p>
+                <p><strong>ID:</strong> 112121</p>
+                <h2>INR - 3,100</h2>
+                
+                <label style="width:80px; display:inline-block;">Color: </label>
+                <select style="margin-top:20px;">
+                	<option style="width:100px; padding:5px;">Red</option>
+                	<option style="width:100px; padding:5px;">Blude</option>
+                	<option style="width:100px; padding:5px;">Green</option>
+                	<option style="width:100px; padding:5px;">Black</option>
+                </select>
+                <div class="clear"></div>
+
+                <label style="width:80px; display:inline-block;">Quantity: </label>
+                <input type="text" placeholder="Qty goes here" style="margin-top:20px; padding:5px;">
+                <div class="clear"></div>
+                
+                <button type="submit">Add To Cart</button>
+                <button type="submit">Add to wishlist</button>
+                <div class="clear"></div>
+                
+                <h3 style="margin-top:20px;">Details</h3>
+                <p>Each of these pieces are customised and is made-to-measure. Once an order is placed, you will be put in touch with the designer directly.</p>
+                
+            </div>
+            
+            <div class="clear"></div>
+        <!-- div.wrap ENDS -->
+		</div>
     </main>
     
     <footer>

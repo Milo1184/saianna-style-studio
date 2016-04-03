@@ -211,3 +211,49 @@ aside {
 		width:100%;
 		display:none;
 	}
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.	Product Details Page Styles
+/*-----------------------------------------------------------------------------------*/
+.product-image {
+	width:30%;
+	float:left;
+}
+
+.product-image .thumbnails {
+	list-style-type:none;
+	width:100%;
+	overflow:hidden;
+	margin-top:10px;
+}
+
+	.product-image .thumbnails li {
+		float:left;
+		width:20%;
+		margin-left:2.5%;
+		margin-right:2.5%;
+	}
+
+#product-details .details {
+	width:65%;
+	padding-left:5%;
+	float:left;
+}
+
+button {
+	background-color:#a07831;
+	border:0px;
+	text-transform:uppercase;
+	width:200px;
+	height:40px;
+	line-height:40px;
+	display:block;
+	font-size:14px;
+	margin-top:30px;
+	color:#fff;
+	font-weight:bold;
+	float:left;
+	margin-left:20px;
+}
+	button:hover {
+	}
