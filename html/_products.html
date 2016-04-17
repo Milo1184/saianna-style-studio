@@ -6,25 +6,23 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
     <link href="css/saianna-style-studio.css" type="text/css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/responsiveslides.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
 </head>
 <body>
 	<header>
     	<div class="wrap">
-        	<a href="#" id="logo">Saianna Style Studio</a>	
+        	<a href="#" id="logo"><img src="images/logo.png" alt="Saianna Style Studio" title="Saianna Style Studio" width="200"></a>	
 
             <nav>
                 <ul id="main-menu">
-                    <li><a href="products.html">New Arrivals</a></li>
+                    <li><a href="#">New Arrivals</a></li>
                     <li><a href="#">Designers</a></li>
                     <li><a href="#">The Collection</a></li>
                     <li><a href="#">The Luxe Couture</a></li>
+                    <li><a href="#">Accessories</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         <!-- div.wrap ENDS -->
@@ -32,13 +30,10 @@
     </header>
 
     <main id="products" class="content">
-        <ul id="slider" class="rslides">
-            <li><img src="images/filler/slider/1.jpg" alt="Banner" title="Banner"></li>
-            <li><img src="images/filler/slider/2.jpg" alt="Banner" title="Banner"></li>
-            <li><img src="images/filler/slider/3.jpg" alt="Banner" title="Banner"></li>
-            <li><img src="images/filler/slider/4.jpg" alt="Banner" title="Banner"></li>
-        <!-- div#slider ENDS -->
-        </ul>
+    	<div id="slider">
+            <img src="images/filler/banner.jpg" alt="Banner" title="Banner">
+        <!-- div.slider ENDS -->
+        </div>
         
         <div class="wrap">
             <aside>
@@ -147,13 +142,15 @@
                 </div>
     
                 <div class="column">
-                    <h3>Subscrbe to our newsletter</h3>
+                    <h3>Customer Support</h3>
                     
-                    <form action="" class="subscribe">
-                    	<input type="text" name="name" placeholder="Enter your name" required>
-                    	<input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
+                    <ul class="footer-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Return &amp; Exchange Policy</a></li>
+                    </ul>
                 <!-- div.column ENDS -->
                 </div>
             <!-- div.three-columns ENDS -->
@@ -161,6 +158,5 @@
         <!-- div.wrap ENDS -->
 		</div>
     </footer>
-    <script type="text/javascript" src="js/core.js"></script>
 </body>
 </html>

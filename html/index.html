@@ -4,15 +4,168 @@
     <meta charset="utf-8">
     <title>Saianna Style Studio</title>
     
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
     <link href="css/saianna-style-studio.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.js"></script>
 </head>
 <body>
-    <main id="landing" class="content">
+	<header>
     	<div class="wrap">
-            <a href="home-page.html" id="logo"><img src="images/logo.png" alt="Saianna Style Studio" title="Saianna Style Studio" width="400"></a>
-            <a href="home-page.html"><img src="images/enter-site.png" alt="Enter Site" title="Enter Site"></a>
+        	<a href="#" id="logo">Saianna Style Studio</a>	
+
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="products.html">New Arrivals</a></li>
+                    <li><a href="#">Designers</a></li>
+                    <li><a href="#">The Collection</a></li>
+                    <li><a href="#">The Luxe Couture</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         <!-- div.wrap ENDS -->
 		</div>
+    </header>
+    <main id="home" class="content">
+        <ul id="slider" class="rslides">
+            <li><img src="images/filler/slider/1.jpg" alt="Banner" title="Banner"></li>
+            <li><img src="images/filler/slider/2.jpg" alt="Banner" title="Banner"></li>
+            <li><img src="images/filler/slider/3.jpg" alt="Banner" title="Banner"></li>
+            <li><img src="images/filler/slider/4.jpg" alt="Banner" title="Banner"></li>
+        <!-- div#slider ENDS -->
+        </ul>
+            
+        <section class="home-collections two-columns">
+        	<div class="wrap">
+                <article class="column">
+                    <h3>Collection 1</h3>
+                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
+                </article>
+    
+                <article class="column">
+                    <h3>Collection 1</h3>
+                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
+                </article>
+    
+                <article class="column">
+                    <h3>Collection 1</h3>
+                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
+                </article>
+    
+                <article class="column">
+                    <h3>Collection 1</h3>
+                    <a href="#"><img src="images/filler/collection.jpg" alt="Collection" title="Collection"></a>
+                </article>
+            <!-- div.wrap ENDS -->
+			</div>
+        <!-- section.home-collections ENDS -->
+        </section>
+        
+        <section class="customise">
+        	<div class="wrap">
+	        	<h2>Customise your order</h2>
+                <p>Follow the link below and place a custom order. You can pick your designs, sizes and fabrics.</p>
+                <a class="link-1" href="#">Customise Your Order</a>
+			</div>
+        <!-- section.customise ENDS -->
+        </section>
+
+        <section class="customers-say">
+        	<div class="wrap">
+	        	<h2>What our customers are saying</h2>
+                
+                <section class="testimonials three-columns">
+                	<article class="column">
+                    	<blockquote>
+                        	Worked wonder for my wardrobe, I hope to return to the studion realy soon.
+                            <span class="close">&nbsp;</span>
+                        </blockquote>
+                    </article>
+
+                	<article class="column">
+                    	<blockquote>
+                        	Excpetional Work, extrodinary attention to detail. I am a satisfied customer.
+                            <span class="close">&nbsp;</span>
+                        </blockquote>
+                    </article>
+
+                	<article class="column">
+                    	<blockquote>
+                        	Lorem ipsum ipsos ulrium.
+                            <span class="close">&nbsp;</span>
+                        </blockquote>
+                    </article>
+
+                	<article class="column">
+                    	<blockquote>
+                        	Worked wonder for my wardrobe, I hope to return to the studion realy soon.
+                            <span class="close">&nbsp;</span>
+                        </blockquote>
+                    </article>
+
+                	<article class="column">
+                    	<blockquote>
+                        	Excpetional Work, extrodinary attention to detail. I am a satisfied customer.
+                            <span class="close">&nbsp;</span>
+                        </blockquote>
+                    </article>
+
+                	<article class="column">
+                    	<blockquote>
+                        	Lorem ipsum ipsos ulrium.
+                            <span class="close">&nbsp;</span>
+                        </blockquote>
+                    </article>
+                <!-- section.testimonials ENDS -->
+                </section>
+			</div>
+        <!-- section.customers-say ENDS -->
+        </section>
     </main>
+    
+    <footer>
+    	<div class="wrap">
+            <div class="three-columns">
+                <div class="column">
+                    <h3>The Luxe Affair</h3>
+                
+                    <ul class="footer-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Return &amp; Exchange Policy</a></li>
+                    </ul>
+                <!-- div.column ENDS -->
+                </div>
+    
+                <div class="column">
+                    <h3>Connect With Us</h3>
+                    
+                    <div class="social-icons">
+                    </div>
+                <!-- div.column ENDS -->
+                </div>
+    
+                <div class="column">
+                    <h3>Subscrbe to our newsletter</h3>
+
+                    <form action="" class="subscribe">
+                    	<input type="text" name="name" placeholder="Enter your name" required>
+                    	<input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                <!-- div.column ENDS -->
+                </div>
+            <!-- div.three-columns ENDS -->
+            </div>
+        <!-- div.wrap ENDS -->
+		</div>
+    </footer>
+    <script type="text/javascript" src="js/core.js"></script>
 </body>
 </html>

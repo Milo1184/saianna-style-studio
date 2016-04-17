@@ -10,4 +10,8 @@ $(document).ready(function() {
 	$('.products-grid .product').mouseleave(function() {
 		$(this).find('.details').slideUp('fast');
 	});
+	
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
 });

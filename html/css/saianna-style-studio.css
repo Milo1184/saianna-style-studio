@@ -43,9 +43,24 @@ a {
 	outline:none !important;
 }
 
-button {
-	cursor:pointer;
-	transition:all 0.4s ease-out 0s;
+input[type="text"], input[type="email"], textarea {
+	border:0px;
+	width:90%;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	margin-bottom:10px;
+	padding-left:5%;
+	padding-right:5%;
+	-webkit-appearance:none;
+}
+
+textarea {
+	height:200px;
+	font-family:inherit;
+	-webkit-appearance:none;
+	line-height:1.5;
+	padding-top:10px;
 }
 
 img {
@@ -58,6 +73,52 @@ p {
 	margin-bottom:10px;
 }
 
+button, .link-1 {
+	background-color:#a07831;
+	border:0px;
+	text-transform:uppercase;
+	width:196px;
+	height:40px;
+	display:block;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	border:2px solid #a07831;
+	padding-left:5px;
+	padding-right:5px;
+	cursor:pointer;
+	transition:all 0.4s ease-out 0s;
+	-webkit-appearance:none;
+}
+.link-1 {
+	line-height:40px;
+}	
+	.link-1:hover, button:hover {
+		background-color:transparent;
+		color:#a07831;
+	}
+	
+blockquote {
+	font-weight:bold;
+	font-family: 'Arimo', sans-serif;
+	font-size:24px;
+	background-image:url(../images/blockquote.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	padding-left:40px;
+	padding-right:40px;
+	position:relative;
+}
+	blockquote span.close {
+		background-image:url(../images/blockquote-close.png);
+		display:block;
+		position:absolute;
+		right:40px;
+		bottom:0px;
+		width:40px;
+		height:26px;
+		background-repeat:no-repeat;
+	}
 /* Classes */
 .wrap {
 	margin:0 auto;
@@ -108,6 +169,14 @@ p {
 	display:block;
 	margin:20px auto;
 	text-align:center;
+	overflow:hidden;
+	text-indent:-1000px;
+	background-image:url(../images/saianna-style-studio.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	width:200px;
+	height:200px;
 }
 
 /* Header Styles */
@@ -135,6 +204,7 @@ p {
 
 #slider {
 	margin-bottom:20px;
+	margin-top:20px;
 }
 	#slider img {
 		width:100%;
@@ -170,13 +240,37 @@ footer {
 /*	3.	Home Page Styles
 /*-----------------------------------------------------------------------------------*/
 #home {
-	padding-top:20px;
 	padding-bottom:30px;
 }
+	#home h2 {
+		border-bottom:2px solid #2A2017;
+		padding-bottom:3px;
+		padding-top:3px;
+	}
 
 .home-collections h3 {
 	display:none;
 }
+
+.customise {
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+	.customise .link-1 {
+		margin:0px auto;
+		margin-top:20px;
+	}
+	
+.customers-say {
+	text-align:center;
+}
+	.customers-say .testimonials {
+		padding-top:40px;
+	}
+		.customers-say .three-columns .column {
+			min-height:200px;
+		}
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Products Page Styles
 /*-----------------------------------------------------------------------------------*/
@@ -243,20 +337,59 @@ aside {
 	float:left;
 }
 
-button {
-	background-color:#a07831;
-	border:0px;
-	text-transform:uppercase;
-	width:200px;
-	height:40px;
-	line-height:40px;
-	display:block;
-	font-size:14px;
-	margin-top:30px;
-	color:#fff;
-	font-weight:bold;
+#product-details .details button {
 	float:left;
 	margin-left:20px;
+	margin-top:30px;
 }
-	button:hover {
-	}
+
+#product-details .details input[type="text"] {
+	width:120px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Contact Page Styles
+/*-----------------------------------------------------------------------------------*/
+#contact {
+	padding-top:20px;
+}
+
+.contact form {
+	width:300px;
+	margin:0 auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.	Responsive Slider Styles
+/*-----------------------------------------------------------------------------------*/
+/*! http://responsiveslides.com v1.54 by @viljamis */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
