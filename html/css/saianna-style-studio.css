@@ -36,7 +36,6 @@ body {
 	background-image:url(../images/background.jpg);
 	background-repeat:repeat;
 	background-position:center center;
-	/* font-family: 'Open Sans', sans-serif; */
 	font-family: 'Archivo Narrow', sans-serif;
 	color:#2A2017;
 }
@@ -213,7 +212,7 @@ blockquote {
 			text-transform:uppercase;
 			line-height:2;
 		}
-			#main-menu li a:hover {
+			#main-menu li a:hover, #main-menu li.current-menu-item a {
 				background-color:#A07831;
 				color:#fff;
 			}
