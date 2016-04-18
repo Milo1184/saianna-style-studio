@@ -21,6 +21,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+h1, h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight:700;
+}
 /*-----------------------------------------------------------------------------------*/
 /*	1.	Global Styles
 /*-----------------------------------------------------------------------------------*/
@@ -32,7 +36,8 @@ body {
 	background-image:url(../images/background.jpg);
 	background-repeat:repeat;
 	background-position:center center;
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Archivo Narrow', sans-serif;
 	color:#2A2017;
 }
 
@@ -75,7 +80,6 @@ p {
 
 button, .link-1 {
 	background-color:#a07831;
-	border:0px;
 	text-transform:uppercase;
 	width:196px;
 	height:40px;
@@ -92,11 +96,21 @@ button, .link-1 {
 }
 .link-1 {
 	line-height:40px;
+	position:relative;
+	width:220px;
+	transition:none;
 }	
 	.link-1:hover, button:hover {
 		background-color:transparent;
 		color:#a07831;
 	}
+	.link-1 span {
+		position:absolute;
+		top:0px;
+		right:10px;
+		display:none;
+	}
+	
 	
 blockquote {
 	font-weight:bold;
@@ -346,6 +360,15 @@ aside {
 #product-details .details input[type="text"] {
 	width:120px;
 }
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Blog Page Styles
+/*-----------------------------------------------------------------------------------*/
+#blog-listing {
+	text-align:center;
+}	
+	#blog-listing .column {
+		margin-bottom:20px;
+	}
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Contact Page Styles
 /*-----------------------------------------------------------------------------------*/
