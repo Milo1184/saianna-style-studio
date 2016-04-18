@@ -96,9 +96,11 @@ button, .link-1 {
 }
 .link-1 {
 	line-height:40px;
+	height:40px;
 	position:relative;
 	width:220px;
 	transition:none;
+	display:block;
 }	
 	.link-1:hover, button:hover {
 		background-color:transparent;

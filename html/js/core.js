@@ -21,15 +21,15 @@ $(document).ready(function() {
 	
 	$('.link-1').mouseenter(function() {
 		$(this).animate({
-			'padding-right': 10
-		}, 100);
-		$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 300 );
+			'width': 230
+		}, 300);
+		$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 100 );
 	});
 	
 	$('.link-1').mouseleave(function() {
 		$(this).animate({
-			'padding-right': 0
-		}, 100);
-		$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 300 );
+			'width': 220
+		}, 300);
+		$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 100 );
 	});	
 });
