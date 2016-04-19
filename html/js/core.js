@@ -16,20 +16,38 @@ $(document).ready(function() {
 	});
 	
 	$('.link-1').each(function() {
-        $(this).append(' <span>&#10095;</span>');
+		if ( $(this).hasClass('prev') ) {
+	        $(this).prepend(' <span>&#10094;</span>');
+		} else {
+	        $(this).append(' <span>&#10095;</span>');
+		}
     });
 	
 	$('.link-1').mouseenter(function() {
-		$(this).animate({
-			'width': 230
-		}, 300);
-		$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 100 );
+		if ( $(this).hasClass('prev') ) {
+			$(this).animate({
+				'padding-left': 20
+			}, 300);
+			$(this).find( 'span' ).toggle( "slide", 100 );
+		} else {
+			$(this).animate({
+				'width': 230
+			}, 300);
+			$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 100 );
+		}
 	});
 	
 	$('.link-1').mouseleave(function() {
-		$(this).animate({
-			'width': 220
-		}, 300);
-		$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 100 );
+		if ( $(this).hasClass('prev') ) {
+			$(this).animate({
+				'padding-left': 5
+			}, 300);
+			$(this).find( 'span' ).toggle( "slide", 100 );
+		} else {
+			$(this).animate({
+				'width': 220
+			}, 300);
+			$(this).find( 'span' ).toggle( "slide", {directon:"right"}, 100 );
+		}
 	});	
 });
