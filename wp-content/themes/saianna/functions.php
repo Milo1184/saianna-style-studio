@@ -6,6 +6,7 @@ http://thebrauxelcode.com/
 */
 
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'blog-thumb', 450, 200, true );
 
 // Register Main Menu
 register_nav_menus( array(
