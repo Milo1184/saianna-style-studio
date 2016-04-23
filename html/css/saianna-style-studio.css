@@ -142,6 +142,10 @@ blockquote {
 		height:26px;
 		background-repeat:no-repeat;
 	}
+
+label {
+	margin-left:5px;
+}
 /* Classes */
 .wrap {
 	margin:0 auto;
@@ -187,6 +191,17 @@ blockquote {
 		float:left;
 	}
 
+.title {
+	font-size:20px;
+	display:block;
+	border-bottom:1px solid #2a2017;
+	font-family: 'Oswald', sans-serif;
+}
+
+.field {
+	padding-top:3px;
+	padding-bottom:3px;
+}
 /* IDs */
 #logo {
 	display:block;
