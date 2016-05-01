@@ -14,25 +14,21 @@
             
         <section class="home-collections two-columns">
         	<div class="wrap">
+            <?php
+			$args = array( 'post_type' => 'post', 'offset' => 4 );
+			$query = new WP_Query( $args );
+			
+			if ( $query->have_posts() ): 
+				while( $query->have_posts() ):
+			?>
                 <article class="column">
                     <h3>Collection 1</h3>
                     <a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/filler/collection.jpg" alt="Collection" title="Collection"></a>
                 </article>
-    
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
-    
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
-    
-                <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/filler/collection.jpg" alt="Collection" title="Collection"></a>
-                </article>
+            <?php
+				endwhile;
+			endif;
+			?>
             <!-- div.wrap ENDS -->
 			</div>
         <!-- section.home-collections ENDS -->
