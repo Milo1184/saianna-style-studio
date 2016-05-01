@@ -11,42 +11,39 @@
             </ul>
         <!-- div.slide-container ENDS -->
 		</div>
-            
+
         <section class="home-collections two-columns">
         	<div class="wrap">
-            <?php
-			$args = array( 'post_type' => 'post', 'offset' => 4 );
-			$query = new WP_Query( $args );
-			
-			if ( $query->have_posts() ): 
-				while( $query->have_posts() ):
-			?>
+	        	<h2>Our Latest Posts</h2>
+				<?php
+                $args = array( 'post_type' => 'post', 'posts_per_page' => 4 );
+                $posts = get_posts( $args );
+                
+                foreach( $posts as $post ): setup_postdata( $post );
+                ?>
                 <article class="column">
-                    <h3>Collection 1</h3>
-                    <a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/filler/collection.jpg" alt="Collection" title="Collection"></a>
+                    <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID ); ?></a>
+                    <h3><?php the_title(); ?></h3>
                 </article>
-            <?php
-				endwhile;
-			endif;
-			?>
+	            <?php endforeach; ?>
             <!-- div.wrap ENDS -->
 			</div>
         <!-- section.home-collections ENDS -->
         </section>
-        
-        <section class="customise">
+
+        <!--<section class="customise">
         	<div class="wrap">
 	        	<h2>Customise your order</h2>
                 <p>Follow the link below and place a custom order. You can pick your designs, sizes and fabrics.</p>
                 <a class="link-1" href="#">Customise Your Order</a>
-			</div>
+			</div>-->
         <!-- section.customise ENDS -->
-        </section>
+        <!--</section>-->
 
         <section class="customers-say">
         	<div class="wrap">
 	        	<h2>What our customers are saying</h2>
-                
+
                 <section class="testimonials three-columns">
                 	<article class="column">
                     	<blockquote>
