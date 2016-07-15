@@ -11,8 +11,10 @@
                 <div class="column">
                     <h3>Connect With Us</h3>
 
-                    <div class="social-icons">
-                    </div>
+                    <ul class="social-icons">
+                    	<li><a href="https://www.facebook.com/saianna.style.studio/" class="facebook" target="_blank">Facebook</a></li>
+                    	<li><a href="#" class="instagram" target="_blank">Instagram</a></li>
+                    </ul>
                 <!-- div.column ENDS -->
                 </div>
 

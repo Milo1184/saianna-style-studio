@@ -20,7 +20,7 @@
 
         <section class="home-collections two-columns">
         	<div class="wrap">
-	        	<h2>Our Latest Posts</h2>
+	        	<h2>Featured Products</h2>
             <!-- div.wrap ENDS -->
 			</div>
         <!-- section.home-collections ENDS -->
