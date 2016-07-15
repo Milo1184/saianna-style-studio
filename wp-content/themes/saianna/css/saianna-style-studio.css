@@ -96,10 +96,10 @@ p {
 	margin-bottom:10px;
 }
 
-button, .link-1 {
+button, .link-1, .add_to_cart_button {
 	background-color:#a07831;
 	text-transform:uppercase;
-	width:196px;
+	width:auto;
 	height:40px;
 	display:block;
 	font-size:14px;
@@ -113,29 +113,27 @@ button, .link-1 {
 	-webkit-appearance:none;
 }
 
-.link-1 {
+.link-1, .add_to_cart_button {
 	line-height:40px;
 	height:40px;
 	position:relative;
-	width:220px;
-	transition:none;
+	width:auto;
 	display:block;
 }	
-	.link-1:hover, button:hover {
+	.add_to_cart_button {
+		background-color:#a07831 !important;
+		color:#fff !important;
+		line-height:20px !important;
+		height:20px !important;
+		border:2px solid #a07831 !important;
+	}
+	.link-1:hover, button:hover, .add_to_cart_button:hover {
 		background-color:transparent;
 		color:#a07831;
 	}
-
-	.link-1 span {
-		position:absolute;
-		top:0px;
-		right:10px;
-		display:none;
-	}
-	.link-1.prev span {
-		left:10px;
-		right:0px !important;
-		display:none;
+	.add_to_cart_button:hover {
+		background-color:transparent !important;
+		color:#a07831 !important;
 	}
 
 blockquote {
@@ -345,6 +343,7 @@ footer {
 	.customise .link-1 {
 		margin:0px auto;
 		margin-top:20px;
+		width:220px;
 	}
 
 .customers-say {
@@ -371,7 +370,6 @@ aside {
 }
 
 .products-grid .product {
-	border:3px solid #2a2017;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
@@ -380,20 +378,7 @@ aside {
 	margin-bottom:20px;
 	cursor:pointer;
 }
-	.products-grid .product p {
-		margin:0px;
-	}
-	.products-grid .product .details {
-		padding-top:5px;
-		padding-bottom:10px;
-		position:absolute;
-		bottom:0px;
-		text-align:center;
-		background:rgba(255,255,255,0.8);
-		width:100%;
-		display:none;
-	}
-	
+
 #sidebar ul {
 	list-style-type:none;
 }
