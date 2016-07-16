@@ -36,4 +36,6 @@ $(document).ready(function() {
 	        $(this).append(' <span>&#10095;</span>');
 		}
     });
+	
+	$(".fancybox").fancybox();
 });

@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-
 	<div id="error">
-		<h2>Sorry, it seems you took a wrong turn somewhere.<br>404: This Page does not exist!</h2>
+    	<div class="wrap">
+        	<h1>404 Error</h1>
+			<p>Sorry, it seems you took a wrong turn somewhere.</p>
+            <p>Please click <a href="<?php bloginfo( 'url' ); ?>">here</a> to return to the home page.</p>
+		</div>
     </div>
-
 <?php get_footer(); ?>

@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-    <main id="home" class="content">
+    <main id="home">
     	<div class="slider-container">
             <ul id="slider" class="rslides">
                 <li><img src="<?php bloginfo( 'template_url' ); ?>/images/filler/slider/1.jpg" alt="Banner" title="Banner"></li>

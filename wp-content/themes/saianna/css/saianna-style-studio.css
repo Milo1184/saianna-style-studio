@@ -171,38 +171,62 @@ label {
 	clear:both;
 }
 
-.two-columns {
+.four-columns {
 	width:100%;
 	overflow:hidden;
 }
-
-	.two-columns .column {
-		width:50%;
-		float:left;
+	ul.four-columns {
+		list-style-type:none;
+		margin-left:0px;
 	}
-
+	.four-columns .column {
+		width:22%;
+		margin-left:1.5%;
+		margin-right:1.5%;
+		float:left;
+		margin-bottom:10px;
+	}
+		.four-columns .column:nth-child(4n+1) {
+			clear:both;
+		}
+	
 .three-columns {
 	width:100%;
 	overflow:hidden;
 }
-
+	ul.three-columns {
+		list-style-type:none;
+		margin-left:0px;
+	}
 	.three-columns .column {
 		width:30%;
-		padding-left:1.5%;
-		padding-right:1.5%;
-		float:left;
-	}
-
-.four-columns {
-	overflow:hidden;
-	width:100%;
-}
-	.four-columns .column {
-		width:21%;
 		margin-left:1.5%;
 		margin-right:1.5%;
 		float:left;
+		margin-bottom:20px;
 	}
+		.three-columns .column:nth-child(3n+1) {
+			clear:both;
+		}
+	
+.two-columns {
+	width:100%;
+	overflow:hidden;
+}
+	ul.two-columns {
+		list-style-type:none;
+		margin-left:0px;
+	}
+	.two-columns .column {
+		margin-left:2%;
+		margin-right:2%;
+		width:46%;
+		float:left;
+		margin-bottom:10px;
+	}
+		.two-columns .column:nth-child(2n+1) {
+			clear:both;
+		}
 
 .cms-content ul, .cms-content ol {
 	margin-left:15px;
@@ -352,9 +376,6 @@ footer {
 	.customers-say .testimonials {
 		padding-top:40px;
 	}
-		.customers-say .three-columns .column {
-			min-height:200px;
-		}
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Products Page Styles
 /*-----------------------------------------------------------------------------------*/
@@ -457,6 +478,15 @@ aside {
 	.banner img {
 		width:100%;
 	}
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Gallery Page Styles
+/*-----------------------------------------------------------------------------------*/
+#gallery {
+}
+	#gallery .three-columns a {
+		display:block;
+	}
+	
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Contact Page Styles
 /*-----------------------------------------------------------------------------------*/

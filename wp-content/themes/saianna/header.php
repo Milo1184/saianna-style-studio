@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="<?php bloginfo( 'template_url' ); ?>/css/fancybox.css" rel="stylesheet" media="all">
     <link href="<?php bloginfo( 'template_url' ); ?>/css/saianna-style-studio.css" rel="stylesheet" media="all">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -11,6 +12,7 @@
     <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.js"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery-ui.js"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/responsiveslides.js"></script>
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/fancybox.js"></script>
 
     <?php wp_head(); ?>
 </head>
