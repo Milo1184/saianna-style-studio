@@ -96,7 +96,7 @@ p {
 	margin-bottom:10px;
 }
 
-button, .link-1, .add_to_cart_button {
+button, .link-1 {
 	background-color:#a07831;
 	text-transform:uppercase;
 	width:auto;
@@ -111,29 +111,29 @@ button, .link-1, .add_to_cart_button {
 	cursor:pointer;
 	transition:all 0.4s ease-out 0s;
 	-webkit-appearance:none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
-.link-1, .add_to_cart_button {
+.link-1, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
 	line-height:40px;
 	height:40px;
 	position:relative;
 	width:auto;
 	display:block;
 }	
-	.add_to_cart_button {
-		background-color:#a07831 !important;
-		color:#fff !important;
-		line-height:20px !important;
-		height:20px !important;
-		border:2px solid #a07831 !important;
+	.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+		background-color:#a07831;
+		color:#fff;
+		border:2px solid #a07831;
+		margin-top:0px;
+		padding:0px;
+		text-align:center;
 	}
-	.link-1:hover, button:hover, .add_to_cart_button:hover {
+	.link-1:hover, button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
 		background-color:transparent;
 		color:#a07831;
-	}
-	.add_to_cart_button:hover {
-		background-color:transparent !important;
-		color:#a07831 !important;
 	}
 
 blockquote {
@@ -398,6 +398,15 @@ aside {
 	position:relative;
 	margin-bottom:20px;
 	cursor:pointer;
+}
+
+.woocommerce ul.products li.product h3 {
+	font-size:15px;
+	padding:0px;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	text-align:center;
 }
 
 #sidebar ul {

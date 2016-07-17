@@ -2,7 +2,6 @@
 <html>
 <head>
     <link href="<?php bloginfo( 'template_url' ); ?>/css/fancybox.css" rel="stylesheet" media="all">
-    <link href="<?php bloginfo( 'template_url' ); ?>/css/saianna-style-studio.css" rel="stylesheet" media="all">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width" />
