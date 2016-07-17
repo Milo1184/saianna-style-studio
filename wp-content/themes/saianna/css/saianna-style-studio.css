@@ -25,6 +25,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+address {
+	font-style:normal;
+	display:inline;
+}
+
 h1 {
 	font-family: 'Oswald', sans-serif;
 	font-weight:700;
@@ -96,7 +101,7 @@ p {
 	margin-bottom:10px;
 }
 
-button, .link-1 {
+button, .link-1, .wpcf7-submit {
 	background-color:#a07831;
 	text-transform:uppercase;
 	width:auto;
@@ -106,14 +111,14 @@ button, .link-1 {
 	color:#fff;
 	font-weight:bold;
 	border:2px solid #a07831;
-	padding-left:5px;
-	padding-right:5px;
 	cursor:pointer;
 	transition:all 0.4s ease-out 0s;
 	-webkit-appearance:none;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .link-1, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
@@ -131,7 +136,7 @@ button, .link-1 {
 		padding:0px;
 		text-align:center;
 	}
-	.link-1:hover, button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+	.link-1:hover, button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover {
 		background-color:transparent;
 		color:#a07831;
 	}
@@ -507,16 +512,26 @@ aside {
 		}
 	
 /*-----------------------------------------------------------------------------------*/
-/*	3.	Contact Page Styles
+/*	3.	Two Column Template Styles
 /*-----------------------------------------------------------------------------------*/
-#contact {
+#two-columns {
 	padding-top:20px;
+	width:100%;
+	overflow:hidden;
 }
-
-.contact form {
-	width:300px;
-	margin:0 auto;
-}
+	#two-columns .left {
+		width:46%;
+		padding-left:2%;
+		padding-right:2%;
+		float:left;
+	}
+	#two-columns .right {
+		width:46%;
+		padding-left:2%;
+		padding-right:2%;
+		float:right;
+		padding-top:10px;
+	}
 /*-----------------------------------------------------------------------------------*/
 /*	4.	Responsive Slider Styles
 /*-----------------------------------------------------------------------------------*/
