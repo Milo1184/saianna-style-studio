@@ -492,9 +492,19 @@ aside {
 /*-----------------------------------------------------------------------------------*/
 #gallery {
 }
+	#gallery .three-columns {
+		padding-top:3px;
+	}
 	#gallery .three-columns a {
 		display:block;
+		padding-top:20px;
+		padding-bottom:20px;
 	}
+		#gallery .three-columns a:hover img {
+			-webkit-box-shadow: 2px 2px 12px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 2px 2px 12px 5px rgba(0,0,0,0.75);
+			box-shadow: 2px 2px 12px 5px rgba(0,0,0,0.75);
+		}
 	
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Contact Page Styles
