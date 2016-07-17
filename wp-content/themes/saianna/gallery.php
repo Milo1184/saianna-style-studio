@@ -7,7 +7,6 @@
 <?php get_header(); ?>
 	<main id="gallery">
     	<div class="wrap">
-        <h1><?php the_title(); ?></h1>
         <?php if( have_rows( 'gallery_images' ) ): ?>
         	<ul class="three-columns">
             <?php while ( have_rows( 'gallery_images' ) ) : the_row(); ?>
