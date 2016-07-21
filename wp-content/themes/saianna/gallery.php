@@ -7,7 +7,9 @@
 <?php get_header(); ?>
 	<main id="gallery">
     	<div class="wrap">
+        	<h2>Videos</h2>
         <?php if( have_rows( 'gallery_images' ) ): ?>
+			<h2>Photoshoots</h2>
         	<ul class="three-columns">
             <?php while ( have_rows( 'gallery_images' ) ) : the_row(); ?>
             	<?php $src = wp_get_attachment_image_src( get_sub_field( 'image' ), 'ful' ); ?>
