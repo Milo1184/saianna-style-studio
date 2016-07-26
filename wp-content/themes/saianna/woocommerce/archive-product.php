@@ -20,8 +20,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 get_header( 'shop' ); ?>
 
-    <main id="products" class="content">
-        <div class="wrap">
+			<?php
+                /**
+                 * woocommerce_before_main_content hook.
+                 *
+                 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+                 * @hooked woocommerce_breadcrumb - 20
+                 */
+                do_action( 'woocommerce_before_main_content' );
+            ?>
+
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
                 <h1><?php woocommerce_page_title(); ?></h1>
             <?php endif; ?>
@@ -38,16 +46,6 @@ get_header( 'shop' ); ?>
             </aside>
 
             <div class="main-content">
-			<?php
-                /**
-                 * woocommerce_before_main_content hook.
-                 *
-                 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-                 * @hooked woocommerce_breadcrumb - 20
-                 */
-                do_action( 'woocommerce_before_main_content' );
-            ?>
-
 			<?php
                 /**
                  * woocommerce_archive_description hook.
@@ -96,6 +94,9 @@ get_header( 'shop' ); ?>
     
             <?php endif; ?>
     
+            <!-- div.main-content ENDS -->
+            </div>
+            <div class="clear"></div>
         <?php
             /**
              * woocommerce_after_main_content hook.
@@ -104,11 +105,5 @@ get_header( 'shop' ); ?>
              */
             do_action( 'woocommerce_after_main_content' );
         ?>
-            <!-- div.main-content ENDS -->
-            </div>
-            <div class="clear"></div>
-        <!-- div.wrap ENDS -->
-		</div>
-    </main>
-
+	
 <?php get_footer( 'shop' ); ?>

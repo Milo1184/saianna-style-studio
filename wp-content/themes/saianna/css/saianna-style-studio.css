@@ -134,6 +134,8 @@ button, .link-1, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocomm
 		border:2px solid #a07831;
 		margin-top:0px;
 		padding:0px;
+		padding-left:5px;
+		padding-right:5px;
 		text-align:center;
 	}
 	.link-1:hover, button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover, .woocommerce #respond:hover input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
@@ -143,6 +145,10 @@ button, .link-1, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocomm
 	
 .woocommerce div.product form.cart .button {
 	line-height:1;
+}
+
+.woocommerce ul.products li.product .star-rating {
+	margin:5px auto;
 }
 
 .woocommerce div.product form.cart div.quantity {
@@ -171,6 +177,13 @@ button, .link-1, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocomm
 .woocommerce div.product .woocommerce-tabs ul.tabs li::after, .woocommerce div.product .woocommerce-tabs ul.tabs li::before {
 	content:normal;
 }
+
+#comment {
+	padding-left:1.5%;
+	padding-right:1.5%;
+	width:97%;
+}
+
 blockquote {
 	font-weight:bold;
 	font-family: 'Arimo', sans-serif;
