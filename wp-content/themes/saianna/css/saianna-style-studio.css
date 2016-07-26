@@ -101,7 +101,7 @@ p {
 	margin-bottom:10px;
 }
 
-button, .link-1, .wpcf7-submit {
+button, .link-1, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
 	background-color:#a07831;
 	text-transform:uppercase;
 	width:auto;
@@ -121,7 +121,7 @@ button, .link-1, .wpcf7-submit {
 	padding-right:10px;
 }
 
-.link-1, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+.link-1, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
 	line-height:40px;
 	height:40px;
 	position:relative;
@@ -136,11 +136,41 @@ button, .link-1, .wpcf7-submit {
 		padding:0px;
 		text-align:center;
 	}
-	.link-1:hover, button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover {
+	.link-1:hover, button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover, .woocommerce #respond:hover input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
 		background-color:transparent;
 		color:#a07831;
 	}
+	
+.woocommerce div.product form.cart .button {
+	line-height:1;
+}
 
+.woocommerce div.product form.cart div.quantity {
+	float:none;
+	margin-bottom:10px;
+}
+
+.woocommerce-tabs {
+}
+	.woocommerce div.product .woocommerce-tabs ul.tabs {
+		padding-left:0px;
+	}
+		.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+			border:none;
+		}
+		.woocommerce div.product .woocommerce-tabs ul.tabs li {
+			background-color:#a07831;
+		}
+			.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+				color:#fff;
+			}
+			.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+				color:#2a2017;
+			}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after, .woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+	content:normal;
+}
 blockquote {
 	font-weight:bold;
 	font-family: 'Arimo', sans-serif;
@@ -532,6 +562,115 @@ aside {
 		float:right;
 		padding-top:10px;
 	}
+/*-----------------------------------------------------------------------------------*/
+/*	10.	Wordpress Styles
+/*-----------------------------------------------------------------------------------*/
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}	
 /*-----------------------------------------------------------------------------------*/
 /*	4.	Responsive Slider Styles
 /*-----------------------------------------------------------------------------------*/
