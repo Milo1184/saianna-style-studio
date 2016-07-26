@@ -148,12 +148,28 @@ button, .link-1, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocomm
 }
 
 .woocommerce ul.products li.product .star-rating {
-	margin:5px auto;
+	margin: auto;
 }
 
 .woocommerce div.product form.cart div.quantity {
 	float:none;
 	margin-bottom:10px;
+}
+
+.checkout-button {
+	padding:0px !important;
+}
+
+.woocommerce .cart .button, .woocommerce .cart input.button {
+	float:right;
+}
+
+#coupon_code {
+	width:150px;
+}
+
+.woocommerce table.shop_table, .woocommerce table.shop_table td, .cart-subtotal td, #add_payment_method .cart-collaterals .cart_totals tr td, #add_payment_method .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals tr td, .woocommerce-cart .cart-collaterals .cart_totals tr th, .woocommerce-checkout .cart-collaterals .cart_totals tr td, .woocommerce-checkout .cart-collaterals .cart_totals tr th {
+	border-color:#a07831;
 }
 
 .woocommerce-tabs {
