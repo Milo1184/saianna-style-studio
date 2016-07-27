@@ -41,6 +41,10 @@ h1 {
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-weight:700;
+	border-bottom:2px solid #2A2017;
+	padding-bottom:3px;
+	padding-top:3px;
+	margin-bottom:10px;
 }
 /*-----------------------------------------------------------------------------------*/
 /*	1.	Global Styles
@@ -422,10 +426,9 @@ footer {
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Home Page Styles
 /*-----------------------------------------------------------------------------------*/
-#home h2 {
-	border-bottom:2px solid #2A2017;
-	padding-bottom:3px;
-	padding-top:3px;
+#home ul.products li {
+	margin-top:10px;
+	margin-bottom:0px;
 }
 
 .home-collections {

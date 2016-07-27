@@ -2,7 +2,7 @@
     	<div class="wrap">
             <div class="three-columns">
                 <div class="column">
-                    <h3>The Luxe Affair</h3>
+                    <h3>Saianna Style Studio</h3>
 
 					<?php wp_nav_menu( array('menu' => 'Footer Menu','menu_class' => 'footer-menu', 'container' => '') ) ?>
                 <!-- div.column ENDS -->

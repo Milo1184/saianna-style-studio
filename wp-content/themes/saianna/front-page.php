@@ -21,6 +21,8 @@
         <section class="home-collections two-columns">
         	<div class="wrap">
 	        	<h2>Featured Products</h2>
+                
+                <?php echo do_shortcode('[featured_products per_page="8" columns="4" orderby="date" order="desc"]'); ?>
             <!-- div.wrap ENDS -->
 			</div>
         <!-- section.home-collections ENDS -->
