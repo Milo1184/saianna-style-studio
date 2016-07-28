@@ -19,6 +19,7 @@
 	<header>
     	<div class="wrap">
         	<a href="index.html" id="logo">Saianna Style Studio</a>
+            <div class="clear"></div>
             <?php wp_nav_menu( array('menu' => 'Main Menu','menu_id' => 'main-menu', 'container' => 'nav') ) ?>
         <!-- div.wrap ENDS -->
 		</div>
