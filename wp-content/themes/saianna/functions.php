@@ -7,6 +7,7 @@ http://thebrauxelcode.com/
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'blog-thumb', 450, 200, true );
+add_image_size( 'blog-featured', 1024, 450, true );
 add_image_size( 'gallery-thumb', 300, 200, array( 'left', 'top' ), true );
 //add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
