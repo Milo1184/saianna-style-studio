@@ -44,44 +44,23 @@
                 <section class="testimonials three-columns">
                 	<article class="column">
                     	<blockquote>
-							<?php the_field( 'testimonial_1' ); ?>
+							&quot;<?php the_field( 'testimonial_1' ); ?>&quot;
                         </blockquote>
 						<p>- <?php the_field( 'name_1' ); ?></p>
                     </article>
 
                 	<article class="column">
                     	<blockquote>
-							<?php the_field( 'testimonial_2' ); ?>
+							&quot;<?php the_field( 'testimonial_2' ); ?>&quot;
                         </blockquote>
 						<p>- <?php the_field( 'name_2' ); ?></p>
                     </article>
 
                 	<article class="column">
                     	<blockquote>
-							<?php the_field( 'testimonial_3' ); ?>
+							&quot;<?php the_field( 'testimonial_3' ); ?>&quot;
                         </blockquote>
 						<p>- <?php the_field( 'name_3' ); ?></p>
-                    </article>
-
-                	<article class="column">
-                    	<blockquote>
-                        	Worked wonder for my wardrobe, I hope to return to the studion realy soon.
-                            <span class="close">&nbsp;</span>
-                        </blockquote>
-                    </article>
-
-                	<article class="column">
-                    	<blockquote>
-                        	Excpetional Work, extrodinary attention to detail. I am a satisfied customer.
-                            <span class="close">&nbsp;</span>
-                        </blockquote>
-                    </article>
-
-                	<article class="column">
-                    	<blockquote>
-                        	Lorem ipsum ipsos ulrium.
-                            <span class="close">&nbsp;</span>
-                        </blockquote>
                     </article>
                 <!-- section.testimonials ENDS -->
                 </section>

@@ -1,6 +1,15 @@
 // JavaScript Document
 $(document).ready(function() {
     "use strict";
+	
+	$('#main-menu li').hover(
+		function() {
+			$(this).find('.sub-menu').slideDown( 'fast' );
+		},
+		function() {
+			$(this).find('.sub-menu').slideUp( 'fast' );
+		}
+	);
 
 	$('.products-grid .product').mouseenter(function() {
 		$(this).find('.details').slideDown('fast');
@@ -29,13 +38,5 @@ $(document).ready(function() {
 		after: function(){}     // Function: After callback
 	});
 
-	$('.link-1').each(function() {
-		if ( $(this).hasClass('prev') ) {
-	        $(this).prepend(' <span>&#10094;</span>');
-		} else {
-	        $(this).append(' <span>&#10095;</span>');
-		}
-    });
-	
 	$(".fancybox").fancybox();
 });
