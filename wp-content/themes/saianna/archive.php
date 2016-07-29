@@ -7,7 +7,7 @@
                 <?php if ( have_posts() ): ?>
                 	<?php while( have_posts() ): the_post(); ?>
                     	<article class="blog-post">
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'blog-featured' ); ?></a>
+							<a href="<?php the_permalink(); ?>"><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>"></a>
                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <p><?php the_excerpt(); ?></p>
                             <a href="<?php the_permalink(); ?>" class="link-1">Read More &nbsp;&nbsp;&#10140;</a>

@@ -401,7 +401,6 @@ header {
 				}
 
 .responsive-show {
-	display:block;
 	width:100%;
 	text-align:center;
 	background-color:#a07831;
@@ -423,6 +422,9 @@ header {
 			border-bottom:1px #fff dashed;
 			width:100%;
 		}
+			#responsive-menu ul li:last-child {
+				border-bottom:none;
+			}
 			#responsive-menu ul li a {
 				background-color:#a07831;
 				display:block;
@@ -940,6 +942,13 @@ a img.aligncenter {
 		.three-columns .column:nth-child(2n+1) {
 			clear:both;
 		}
+	#two-columns .main-content {
+		float:none;
+		width:100%;
+	}
+	#two-columns aside {
+		display:none;
+	}
 }
 @media (max-width: 500px) {
 	.three-columns .column {

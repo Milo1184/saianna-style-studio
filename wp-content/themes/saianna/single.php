@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<main id="two-columns" class="cms-content">
-        <?php the_post_thumbnail( 'large-strip' ); ?>
+        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
         
     	<div class="wrap">
             <aside>
