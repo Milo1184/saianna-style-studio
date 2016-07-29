@@ -992,3 +992,22 @@ a img.aligncenter {
 			clear:none;
 		}
 }
+@media (max-width: 415px) {
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		font-size:14px;
+	}
+}
+@media (max-width: 393px) {
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		font-size:12px;
+	}
+	.woocommerce-Tabs-panel h2 {
+		font-size:16px;
+	}
+}
+@media (max-width: 342px) {
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		font-size:10px;
+		display:block;
+	}
+}
