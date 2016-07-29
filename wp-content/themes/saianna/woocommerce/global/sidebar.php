@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php foreach( $productCategories as $productCategory ): ?>
 	<div class="product-category-container">
-        <p class="product-parent-category"><a href="<?php bloginfo( 'url' ); ?>/products/<?php echo $productCategory->slug; ?>/"><?php echo $productCategory->name; ?></a><a class="expander" href="#"><span class="plus">+</span><span class="minus">-</span></a></p>
+        <p class="product-parent-category"><a href="<?php bloginfo( 'url' ); ?>/shop-category/<?php echo $productCategory->slug; ?>/"><?php echo $productCategory->name; ?></a><a class="expander" href="#"><span class="plus">+</span><span class="minus">-</span></a></p>
         <?php $productSubCategories = get_terms( 'product_cat', array('oderby' => 'term_order', 'hide_empty' => 0, 'parent' => $productCategory->term_id) ); ?>
     
         <?php foreach( $productSubCategories as $productSubCategory ): ?>

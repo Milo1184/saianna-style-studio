@@ -987,6 +987,10 @@ a img.aligncenter {
 		float:none;
 		width:96%;
 	}
+	.product-parent-category a.expander	{
+		padding-left:10px;
+		padding-right:10px;
+	}
 }
 @media (max-width: 500px) {
 	.three-columns .column {
