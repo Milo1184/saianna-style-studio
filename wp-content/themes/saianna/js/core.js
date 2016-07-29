@@ -10,7 +10,11 @@ $(document).ready(function() {
 			$(this).find('.sub-menu').slideUp( 'fast' );
 		}
 	);
-
+	
+	$('.responsive-show').click(function() {
+		$('#responsive-menu').slideToggle( 'fast' );
+	});
+	
 	$('.products-grid .product').mouseenter(function() {
 		$(this).find('.details').slideDown('fast');
 	});

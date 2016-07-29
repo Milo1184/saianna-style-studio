@@ -351,6 +351,7 @@ header {
 	width:200px;
 	height:200px;
 }
+
 #main-menu {
 	list-style-type:none;
 	width:100%;
@@ -398,6 +399,42 @@ header {
 					padding-left:10px;
 					background-image:none !important;
 				}
+
+.responsive-show {
+	display:block;
+	width:100%;
+	text-align:center;
+	background-color:#a07831;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#fff;
+	display:none;
+}
+
+#responsive-menu {
+	display:none;
+}
+	#responsive-menu ul {
+		list-style-type:none;
+		width:100%;
+		overflow:hidden;
+	}
+		#responsive-menu ul li {
+			border-bottom:1px #fff dashed;
+			width:100%;
+		}
+			#responsive-menu ul li a {
+				background-color:#a07831;
+				display:block;
+				padding-bottom:10px;
+				padding-top:10px;
+				text-align:center;
+				color:#fff;
+			}
+			#responsive-menu ul li ul {
+				list-style-type:none;
+				display:none;
+			}
 
 #slider {
 	margin-bottom:20px;
@@ -869,7 +906,31 @@ a img.aligncenter {
 		padding-right:2%;
 	}
 }
+@media (max-width: 1000px) {
+	#main-menu li {
+		padding-bottom:10px;
+	}
+	#main-menu li a, #main-menu li ul li a {
+		font-size:12px;
+	}
+	#main-menu li ul {
+		top:30px;
+	}
+	#logo {
+		height:150px;
+		width:150px;
+	}
+	#slider {
+		margin-top:0px;
+	}
+}
 @media (max-width: 768px) {
+	.menu-main-menu-container {
+		display:none;
+	}
+	.responsive-show {
+		display:block;
+	}
 	.three-columns .column {
 		width:47%;
 	}

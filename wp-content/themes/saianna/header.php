@@ -20,7 +20,13 @@
     	<div class="wrap">
         	<a href="index.html" id="logo">Saianna Style Studio</a>
             <div class="clear"></div>
-            <?php wp_nav_menu( array('menu' => 'Main Menu','menu_id' => 'main-menu', 'container' => 'nav') ) ?>
+            <?php wp_nav_menu( array('menu' => 'Main Menu', 'menu_id' => 'main-menu', 'container' => 'nav') ) ?>
+            <div class="clear"></div>
+
+			<div class="responsive-menu-container">
+            	<a href="#" class="responsive-show">&#9776; Menu</a>
+	            <?php wp_nav_menu( array('menu' => 'Main Menu', 'menu_id' => '', 'container' => 'nav', 'container_id' => 'responsive-menu') ) ?>
+            </div>
         <!-- div.wrap ENDS -->
 		</div>
     </header>
