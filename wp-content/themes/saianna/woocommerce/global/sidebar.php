@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     
         <?php foreach( $productSubCategories as $productSubCategory ): ?>
         <ul class="product-categories">
-            <li><a href="<?php bloginfo( 'url' ); ?>/products/<?php echo $productCategory->slug; ?>/<?php echo $productSubCategory->slug; ?>/"><?php echo $productSubCategory->name; ?></a></li>
+            <li><a href="<?php bloginfo( 'url' ); ?>/shop-category/<?php echo $productCategory->slug; ?>/<?php echo $productSubCategory->slug; ?>/"><?php echo $productSubCategory->name; ?></a></li>
         </ul>
         <?php endforeach ?>
     <!-- div.product-category-container ENDS -->
