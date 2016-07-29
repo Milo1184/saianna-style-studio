@@ -25,13 +25,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php $productCategories = get_terms( 'product_cat', array('oderby' => 'term_order', 'hide_empty' => 0, 'parent' => 0) ); ?>
 
 <?php foreach( $productCategories as $productCategory ): ?>
-	<p class="product-parent-category"><a href="<?php bloginfo( 'url' ); ?>/products/<?php echo $productCategory->slug; ?>/"><?php echo $productCategory->name; ?></a></p>
-    <?php $productSubCategories = get_terms( 'product_cat', array('oderby' => 'term_order', 'hide_empty' => 0, 'parent' => $productCategory->term_id) ); ?>
-
-    <?php foreach( $productSubCategories as $productSubCategory ): ?>
-    <ul class="product-categories">
-    	<li><a href="<?php bloginfo( 'url' ); ?>/products/<?php echo $productCategory->slug; ?>/<?php echo $productSubCategory->slug; ?>/"><?php echo $productSubCategory->name; ?></a></li>
-    </ul>
-    <?php endforeach ?>
+	<div class="product-category-container">
+        <p class="product-parent-category"><a href="<?php bloginfo( 'url' ); ?>/products/<?php echo $productCategory->slug; ?>/"><?php echo $productCategory->name; ?></a><a class="expander" href="#"><span class="plus">+</span><span class="minus">-</span></a></p>
+        <?php $productSubCategories = get_terms( 'product_cat', array('oderby' => 'term_order', 'hide_empty' => 0, 'parent' => $productCategory->term_id) ); ?>
+    
+        <?php foreach( $productSubCategories as $productSubCategory ): ?>
+        <ul class="product-categories">
+            <li><a href="<?php bloginfo( 'url' ); ?>/products/<?php echo $productCategory->slug; ?>/<?php echo $productSubCategory->slug; ?>/"><?php echo $productSubCategory->name; ?></a></li>
+        </ul>
+        <?php endforeach ?>
+    <!-- div.product-category-container ENDS -->
+    </div>
 
 <?php endforeach; ?>

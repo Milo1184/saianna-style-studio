@@ -13,6 +13,8 @@ $(document).ready(function() {
 	
 	$('.responsive-show').click(function() {
 		$('#responsive-menu').slideToggle( 'fast' );
+		
+		return false;
 	});
 	
 	$('.products-grid .product').mouseenter(function() {
@@ -22,7 +24,15 @@ $(document).ready(function() {
 	$('.products-grid .product').mouseleave(function() {
 		$(this).find('.details').slideUp('fast');
 	});
-
+	
+	$('.product-parent-category .expander').click(function() {
+		$(this).parent().parent().find('.product-categories').slideToggle( 'fast' );
+		
+		$(this).toggleClass( 'show' );
+		
+		return false;
+	});
+	
 	$(".rslides").responsiveSlides({
 		auto: true,             // Boolean: Animate automatically, true or false
 		speed: 500,            // Integer: Speed of the transition, in milliseconds
