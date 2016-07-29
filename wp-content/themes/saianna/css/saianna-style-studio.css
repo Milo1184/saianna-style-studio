@@ -983,6 +983,10 @@ a img.aligncenter {
 		width:100%;
 		padding-top:20px;
 	}
+	#two-columns .left, #two-columns .right {
+		float:none;
+		width:96%;
+	}
 }
 @media (max-width: 500px) {
 	.three-columns .column {
