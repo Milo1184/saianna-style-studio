@@ -17,7 +17,7 @@
             </section>
             
             <aside class="sidebar-right">
-            	<h2>Featured Products</h2>
+            	<h3>Featured Products</h3>
             	<?php echo do_shortcode('[featured_products per_page="4" columns="1" orderby="date" order="desc"]'); ?>
             </aside>
         <!-- div.wrap ENDS -->
